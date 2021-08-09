@@ -24,9 +24,17 @@ public class LineDay3 {
         double len2= Math.sqrt( Math.pow(x5,2) + Math.pow(y5,2) );
         System.out.println("Length of line2 is :- "+len2);
 
-        if(len1==len2)
-            System.out.println("lines are equal in length");
+        //compare line 1 and line 2
+        Double doublelen1 = new Double(len1);
+        Double doublelen2 = new Double(len2);
+        
+        int compare = doublelen1.compareTo(doublelen2);
+
+        if(compare > 0)
+            System.out.println("line1 is greater than line2");
+        else if (compare < 0)
+            System.out.println("line2 is greater than line 1");
         else
-            System.out.println("Lines are not equal in length");
+            System.out.println("Lines are equal in length");
     }
 }
