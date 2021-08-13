@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class LineDay3 {
-    public static void main(String[] args) {
+    public static void lineDay3() {
         Random ran=new Random();
 
         //for line 1
